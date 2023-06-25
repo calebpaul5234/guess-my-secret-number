@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="?-icon.png" type="images/png" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="message">It's between 1 & 10</p>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <p class="label-tries">👀 Tries: <span class="tries">3</span></p>
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+        <button class="btn again">Again!</button>
+        <p class="help">Enter = Check answer</p>
+      </section>
+      <section class="right">
+        <p class="label-straightWins">
+          🏆 Wins in a Row: <span class="straightWins">0</span>
+        </p>
+        <img
+          src="https://media.tenor.com/BpnBCSmkazMAAAAd/superstitious-theoffice.gif"
+          alt="michael_scott"
+        />
+        <p class="label-highscore">
+          🏆 Highscore <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
