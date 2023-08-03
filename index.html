@@ -5,36 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="?-icon.png" type="images/png" />
-    <title>Guess My Number!</title>
+    <link rel="icon" href="tabIcon.png" type="images/png" />
+    <title>Guess My Secret Number!</title>
   </head>
   <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="message">It's between 1 & 10</p>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <p class="label-tries">👀 Tries: <span class="tries">3</span></p>
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-        <button class="btn again">Again!</button>
-        <p class="help">Enter = Check answer</p>
-      </section>
-      <section class="right">
-        <p class="label-straightWins">
-          🏆 Wins in a Row: <span class="straightWins">0</span>
-        </p>
-        <img
-          src="https://media.tenor.com/BpnBCSmkazMAAAAd/superstitious-theoffice.gif"
-          alt="michael_scott"
-        />
-        <p class="label-highscore">
-          🏆 Highscore <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
+    <h1>GUESS MY SECRET NUMBER</h1>
+    <p class="small-message">You have 3 tries. Choose wisely...</p>
+    <div class="number">?</div>
+    <input type="number" class="guess" />
+    <p class="trophies"></p>
+    <div class="modal">
+      <p class="modal-header">👋 GREETINGS!</p>
+      <p class="modal-text">
+        This is a simple game. You have 3 tries to guess my secret number that
+        is between 1 and 10. Type in your answer and press 'Enter' to see if
+        it's correct. If it is, you receive a trophy. See how many you can earn
+        in a row!
+      </p>
+      <button class="btn">Let's play!</button>
+    </div>
+    <div class="overlay"></div>
     <script src="script.js"></script>
   </body>
 </html>
